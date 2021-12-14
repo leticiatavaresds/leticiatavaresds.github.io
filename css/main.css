@@ -659,7 +659,7 @@ input[type="button"] {
 	height: 5.4rem;
 	line-height: 5.4rem;
 	padding: 0 3rem;
-	margin: 0 .3rem 1.2rem 0;
+	margin: 0 .4rem 1.2rem 0;
 	background: #d8d8d8;
 	color: #313131;
 	text-decoration: none;
@@ -694,8 +694,9 @@ button.button-primary,
 input[type="submit"].button-primary,
 input[type="reset"].button-primary,
 input[type="button"].button-primary {
-	background: #313131;
+	background: #FF0077;
 	color: #FFFFFF;
+
 }
 .button.button-primary:hover,
 a.button.button-primary:hover,
@@ -946,7 +947,7 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 .skill-bars li {
 	height: .6rem;
 	background: #a1a1a1;
-	width: 100%;
+	width: 80%;
 	margin-bottom: 6rem;
 	padding: 0;
 	position: relative;
@@ -969,9 +970,9 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 }
 .skill-bars li .progress span {
 	position: absolute;
-	right: 0;
+	right: -35px;
 	top: -3.6rem;
-	display: block;
+	/* display: block; */
 	font-family: "poppins-regular", sans-serif;
 	color: white;
 	font-size: 1.1rem;
@@ -979,6 +980,8 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 	background: #313131;
 	padding: .6rem .6rem;
 	border-radius: 3px;
+	width: 70px;
+	text-align: center;
 }
 .skill-bars li .progress span::after {
 	position: absolute;
@@ -1095,20 +1098,21 @@ header .row {
 }
 header .top-bar {
 	display: block;
-	background: #0E0E0E;
-	min-width: 220px;
+	background: rgba(255, 255, 255, 0);
+	min-width: 250px;
 	min-height: 66px;
 	position: absolute;
-	left: 90px;
+	left: 0px;
 	top: 0;
 }
 header .logo {
 	float: left;
-	margin-left: 20px;
+	margin-left: 10px;
 	margin-right: 50px;
-	margin-top: 25px;
+	margin-top: 18px;
 	position: relative;
 }
+
 header .logo a {
 	display: block;
 	margin: 0;
@@ -1117,10 +1121,10 @@ header .logo a {
 	font: 0/0 a;
 	text-shadow: none;
 	color: transparent;
-	width: 92px;
-	height: 15px;
+	width: 79px;
+	height: 42px;
 	background: url("../images/logo.png") no-repeat center;
-	background-size: 92px 15px;
+	background-size: 79px 42px;
 }
 
 /**
@@ -1131,7 +1135,7 @@ header .logo a {
 	float: left;
 	width: 40px;
 	height: 40px;
-	margin-left: 20px;
+	margin-left: 5px;
 	margin-top: 13px;
 	display: block;
 	position: relative;
@@ -1267,22 +1271,22 @@ header .logo a {
  */
 @media only screen and (max-width:1024px) {
 	header .top-bar {
-		left: 60px;
+		left: 5px;
 	}
 }
 @media only screen and (max-width:768px) {
 	header .top-bar {
-		left: 50px;
+		left: 5px;
 	}
 }
 @media only screen and (max-width:600px) {
 	header .top-bar {
-		left: 35px;
+		left: 5px;
 	}
 }
 @media only screen and (max-width:400px) {
 	header .top-bar {
-		left: 25px;
+		left: 5px;
 	}
 }
 
@@ -1503,19 +1507,19 @@ header .logo a {
 
 .intro-info {
 	margin-top: 4.2rem;
-	margin-right: -30px;
-	margin-left: -30px;
+	margin-right: -10px;
+	margin-left: -100px;
 }
 .intro-info img {
-	height: 9rem;
-	width: 9rem;
+	height: 18rem;
+	width: 18rem;
 	border-radius: 50%;
-	margin: .9rem 0 0 0;
+	margin: 0 20 0;
 	float: left;
 }
 .intro-info .lead {
-	text-align: left;
-	padding-left: 13rem;
+	text-align: justify;
+	padding-left: 20rem;
 }
 
 .about-content {
@@ -1561,10 +1565,12 @@ header .logo a {
 	text-align: center;
 }
 .button-section .button {
-	width: 250px;
+	width: 300px;
+	border-radius: 4%;
 }
 .button-section [class*="col-"] .button:first-child {
-	margin-right: 4rem;
+	margin-right: 6rem;
+	
 }
 
 /**
@@ -1689,10 +1695,12 @@ header .logo a {
 	font-family: "poppins-regular", sans-serif;
 	font-size: 1.6rem;
 	color: #888888;
+	
 }
 #resume .timeline-content {
 	margin-left: 35%;
 	padding-left: 60px;
+	text-align: justify;
 }
 #resume .timeline-content h4 {
 	position: relative;
@@ -1809,6 +1817,7 @@ header .logo a {
 	-webkit-transition: all 0.5s ease-in-out;
 	-ms-transition: all 0.5s ease-in-out;
 	transition: all 0.5s ease-in-out;
+	width: 300px;
 }
 
 #portfolio .overlay {
@@ -1865,9 +1874,9 @@ header .logo a {
 	left: 0;
 }
 #portfolio .folio-item:hover img {
-	-webkit-transform: scale(1.05);
-	-ms-transform: scale(1.05);
-	transform: scale(1.05);
+	-webkit-transform: scale(0.8);
+	-ms-transform: scale(0.8);
+	transform: scale(0.8);
 }
 
 /**
@@ -1906,6 +1915,8 @@ header .logo a {
 }
 .popup-modal img {
 	vertical-align: bottom;
+	margin-left: 115px;
+	width: 320px;
 }
 .popup-modal .description-box {
 	padding: 1.8rem 3.6rem 3rem;
@@ -2104,7 +2115,7 @@ header .logo a {
 	background-size: cover;
 	padding-top: 12rem;
 	padding-bottom: 12rem;
-	color: white;
+	color: #FFFFFF;
 	position: relative;
 }
 #services .overlay {
@@ -2122,13 +2133,13 @@ header .logo a {
 }
 
 #services .section-intro h1 {
-	color: white;
+	color: #FFFFFF;
 }
 #services .section-intro h5 {
-	color: #FF0077;
+	color: #FFFFFF;
 }
 #services .section-intro p {
-	color: rgba(255, 255, 255, 0.7);
+	color: #FFFFFF;
 }
 .services-content {
 	max-width: 1200px;
@@ -2147,13 +2158,13 @@ header .logo a {
 }
 .services-list .icon i {
 	font-size: 5.4rem;
-	color: #FF0077;
+	color: #FFFFFF;
 }
 .services-list h3 {
 	color: #FFFFFF;
 }
 .services-list .desc {
-	color: rgba(255, 255, 255, 0.6);
+	color: #FFFFFF;
 }
 /* pagination */
 .owl-pagination {
@@ -2287,6 +2298,71 @@ header .logo a {
 
 /** 
  * ===================================================================
+ * 15. likes - (_layout.scss)
+ *
+ * ------------------------------------------------------------------- 
+ */
+ #likes {
+	background: #313131 url(../images/bg.jpg) no-repeat center;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	background-size: cover;
+	padding-top: 12rem;
+	padding-bottom: 12rem;
+	color: #000000;
+	position: relative;
+}
+#likes .overlay {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: #151515;
+	opacity: .9;
+}
+
+#likes .section-intro {
+	margin-bottom: 1.8rem;
+}
+
+#likes .section-intro h1 {
+	color: #000000;
+}
+#likes .section-intro h5 {
+	color: #000000;
+}
+#likes .section-intro p {
+	color: #000000;
+}
+.likes-content {
+	max-width: 1200px;
+}
+.likes-list {
+	margin-top: 1.2rem;
+	text-align: center;
+}
+.likes-list .service {
+	margin-bottom: 1.2rem;
+	padding: 0 30px;
+}
+.likes-list .icon {
+	display: inline-block;
+	margin-bottom: 2.1rem;
+}
+.likes-list .icon i {
+	font-size: 5.4rem;
+	color: #000000;
+}
+.likes-list h3 {
+	color: #000000;
+}
+.likes-list .desc {
+	color: #000000;
+}
+
+/** 
+ * ===================================================================
  * 16. stats - (_layout.scss)
  *
  * ------------------------------------------------------------------- 
@@ -2320,7 +2396,7 @@ header .logo a {
 	color: white;
 }
 #stats .stat-title {
-	color: rgba(255, 255, 255, 0.5);
+	color: #FFFFFF;
 }
 
 /**

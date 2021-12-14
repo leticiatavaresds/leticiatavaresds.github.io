@@ -100,6 +100,35 @@
     });
 
 	/*---------------------------------------------------- */
+	/* Owl Carousel Degrees
+	------------------------------------------------------ */ 
+	$("#owl-slider-degree").owlCarousel({
+        navigation: false,
+        pagination: true,
+        itemsCustom : [
+	        [0, 1],
+	        [1500, 1],
+	        [1500, 1]
+	     ],
+        navigationText: false
+    });
+
+		/*---------------------------------------------------- */
+	/* Owl Carousel Gostos
+	------------------------------------------------------ */ 
+	$("#owl-slider-gostos").owlCarousel({
+        navigation: false,
+        pagination: true,
+        itemsCustom : [
+	        [0, 1],
+	        [1500, 1],
+	        [1500, 1]
+	     ],
+        navigationText: false
+    });
+
+
+	/*---------------------------------------------------- */
 	/* Owl Carousel Works
 	------------------------------------------------------ */ 
 	$("#owl-slider-academy").owlCarousel({
